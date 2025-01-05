@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+body > div > p {
+    height: 160px;
+    width: 160px;
+    border: 10px solid yellow;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    outline: 10px dashed blue;
+}

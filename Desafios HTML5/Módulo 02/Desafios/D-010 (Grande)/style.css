@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'idroid';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#3BD57F;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+}
+
+:root {
+    --fonte-android: 'idroid', arial;
+}
+
+.titulo1 {
+    font-family: 'Bebas Neue', 'serif';
+}
+
+.subtitulo1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo2 {
+    font-family: var(--fonte-android);
+}
+
+.titulo3 {
+    font-family: var(--fonte-android);
+}
+
+.titulo4 {
+    font-family: var(--fonte-android);
+}
+
+#cabecalho {
+    background-image: linear-gradient(to bottom,#3BD57F, #0f3620 );
+    background-attachment: scroll;
+    color: white;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ #cabecalho > section > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
+    font-size: 3em;
+    
+ }
+
+ #cabecalho > section > p {
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
+    padding: 30px;
+ }
+
+#cabecalho > section > nav {
+    text-align: left;
+    padding: 10px;
+}
+
+.menu > a { 
+    color:#cde0d5;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.158);
+}
+
+.menu > a:hover {
+    background-color: #3ddc84;
+    color:#011409;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid transparent;
+    line-height: 2em;
+    font-size: 1em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+    width: 799px;
+    border-radius: 18px 18px 0px 0px;
+    
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.titulo2 {
+    color:#217c49;
+    text-indent: 8px;
+    font-size: 1.7em;
+}
+
+.titulo3 {
+    color:#217c49;
+    background-image: linear-gradient(to right, #3BD57F 1%, transparent);
+    text-indent: 8px;
+}
+
+.titulo4 {
+    color: #217c49;
+    background-image: linear-gradient(to right, #3BD57F 1%, transparent);
+    text-indent: 8px;
+}
+
+main > section > p {
+    margin: 10px;
+    text-indent: 30px;
+}
+
+strong {
+    color:#217445;
+}
+
+div.video {
+    background-color:#0f3620;
+    margin: 0px -13px 30px -13px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+}
+
+div.video > iframe { 
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#extra {
+
+    min-width: 300px;
+    max-width: 1000px;
+    width: 824px;
+    margin: auto;
+    margin-top: -30px;
+    height: 90%;
+}
+
+#extra > section > h3 { 
+    background-color:#0cd663;
+    border-radius: 12px 12px 0px 0px;
+    text-align: left;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+    padding: 6px;
+    color: white;
+}
+
+
+#extra > section {
+    background-color:#ffffff;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.textinho {
+    background-color:#52ffa080;
+    padding: 14px;
+    text-indent: 40px;
+    line-height: 24px;
+}
+
+#efim > section > p {
+    background-color:#0f3620;
+    color: rgb(219, 219, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    border-top: 12px solid #3BD57F;
+}
+
+#efim > section > p > strong {
+    color: white;
+}
+
+.listinha {
+    columns: 2;
+    list-style-position: inside;
+    background-color: #52ffa080;
+    padding: 9px;
+}
+
+.linha1 {
+    padding: 14px;
+    text-indent: 40px;
+    line-height: 24px;
+    background-color:#52ffa080;
+}
+
+.linha2 {
+    padding: 20px;
+    text-indent: 40px;
+    line-height: 20px;
+    background-color:#52ffa080;
+    margin: auto;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.linha3 {
+    background-color: white;
+    padding: 20px;
+    text-indent: 40px;
+    line-height: 20px;
+
+}
+
+.linkmensagem:visited {
+    color:#217445;
+}
+
+.linkmensagem {
+    text-decoration: none;
+}
+
+.linkmensagem2:visited {
+    color:white;
+}
+
+.linkmensagem2 {
+    text-decoration: none;
+}

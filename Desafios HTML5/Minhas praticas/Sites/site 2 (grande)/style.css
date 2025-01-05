@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Badeen+Display&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
+
+@font-face {
+    font-family:'classica';
+    src: url('./fontes/JunigardenSerif_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #015FDB;
+    --cor02: #1D5DB1;
+    --cor03: #2D5486;
+    --cor04: #2E425C;
+    --cor05: #222933;
+    --cor06: #2B2E33;
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontbasica: 'Bebas Neue', Arial;
+    --fontclassica: 'classica', Arial;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--fontepadrao);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--cor03);
+    padding-top: 40px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04) 80%)
+}
+
+header h1 {
+    color: white;
+    padding: 16px;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+    font-family: var(--fontbasica);
+}
+
+header p {
+    color: white;
+    padding: 18px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+}
+
+nav {
+    background-color: var(--cor04);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.26);
+}
+
+nav a {
+    font-family: var(--fontepadrao);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: .5s;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+}
+
+nav a:hover {
+    background-color: var(--cor03);
+    padding: 10.5px;
+    border-radius: 15px 15px 15px 15px;
+    color: var(--cor01);
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+    min-width: 500px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.288);
+    border-radius: 0px 0px 12px 12px;
+}
+
+main h1 {
+    font-family: var(--fontclassica);
+    color: var(--cor01);
+    margin: auto;
+    color: white;
+    font-size: 2.2em;
+    padding: 4px;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    border-radius: 12px;
+}
+
+main h2 {
+    font-family: var(--fontclassica);
+    color: white;
+    font-size: 1.3em;
+    padding: 4px;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    border-radius: 12px;
+}
+
+main p {
+    padding: 10px;
+    text-indent: 20px;
+    line-height: 28px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+}
+
+main a::after {
+    content: '\00A0\1F517'
+}
+
+main img {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 30px;
+}
+
+main strong { 
+    color: var(--cor01);
+}
+
+main ul {
+    padding: 10px;
+    list-style-position: inside;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.imagem01 {
+    max-width: 600px;
+    display: block;
+    max-width: 800px;
+    max-height: 320px;
+}
+
+.imagem02 {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+.imagem03 {
+    max-width: 500px;
+    min-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+aside > h3 {
+    background-color: var(--cor01);
+    font-size: 1.3em;
+    text-indent: 20px;
+    border-radius: 12px 12px 0px 0px;
+    color: white;
+    padding: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+}
+
+aside > p {
+    background-color: var(--cor02);
+    color: white;
+    font-size: 1.3em;
+    text-align: justify;
+    padding: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+}
+
+.linkfinal {
+    color: white;
+}
+
+aside > ul {
+    background-color: var(--cor02);
+    color: white;
+    border-radius: 0px 0px 12px 12px;
+    line-height: 26px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+    columns: 2;
+    padding: 20px;
+    margin-bottom: 2px;
+}
+
+aside strong {
+    color: white;
+} 
