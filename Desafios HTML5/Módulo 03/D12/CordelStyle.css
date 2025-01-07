@@ -7,9 +7,15 @@
     padding: 0px;
 }
 
+
+
 :root {
     --fonttitulo: 'Passion One';
-    --fonttexto: 'Sriracha' Arial;
+    --fonttexto: 'Sriracha';
+}
+
+header {
+    background-color: black;
 }
 
 #Titulo {
@@ -41,8 +47,52 @@
     text-decoration: underline;
 }
 
-header {
-    background-color: black;
+main {
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonttexto);
+    font-size: 3.5vw;
+    min-height: 100vh;
+ 
+}
+
+section.normal {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.imagem > p {
+    background-color: rgba(8, 8, 8, 0.445);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: inline-block;
+}
+
+#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    margin-left: -30px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+
+}
+
+#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    margin-left: -30px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-attachment: fixed;
+
 }
 
 footer {
