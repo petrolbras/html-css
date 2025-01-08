@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,6 +25,12 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         tfoot {
             background-color: gray;
             color: white;
@@ -31,6 +38,23 @@
         
         .num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(167, 154, 112);
+            text-decoration: underline;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(185, 185, 185);
+            padding: 8px;
         }
 
         </style>
@@ -50,8 +74,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="co1">Estado</th>
+                <th scope="co1" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -164,12 +188,17 @@
                 <td class="num">716 793</td>
             </tr>
         </tbody>
+        <caption>
+            População das unidades federativas
+        </caption>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>212 583 720</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, officia esse dignissimos ab veniam unde? Veritatis, animi expedita iusto, mollitia magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus? magni error esse culpa delectus libero numquam velit molestiae odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio commodi doloremque et blanditiis laboriosam ducimus ab nulla quidem nesciunt molestiae facere doloribus, voluptatum architecto repellendus accusamus cumque odio dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quisquam corporis, odio quam, vel tempora repudiandae debitis odit, eligendi neque velit assumenda atque accusantium nihil consectetur placeat error. Consequatur, eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, harum? Neque dolorum, fuga omnis sit sed esse aut reiciendis in ullam vitae optio, illum, dignissimos odio alias. Repellat, illum voluptatibus?
+    </p>
 </body>
 </html>
