@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#principal {
+            background-color: salmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div > div {
+            background-color: rgb(98, 98, 221);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 300px;
+        }
+
+        #elemento01 {
+            flex-shrink: 3;
+            flex-grow: 3;
+        }
+
+        #elemento02 {
+            flex-shrink: 6;
+            flex-grow: 1;
+        }
+        
+        #elemento03 {
+            flex-shrink: 0;
+            flex-grow: 6;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div id="elemento01">Elemento 01</div>
+        <div id="elemento02">Elemento 02</div>
+        <div id="elemento03">Elemento 03</div>
+    </div>
+</body>
+</html>
